@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                /*background-color: rgba(255, 0, 71, 1);*/
+                background-image: url(delma_icon.jpg);
+                background-position: center;
+            }
+            h1 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: black;
+                text-align: center;
+                font-size: 60px;
+            }
+            h2 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: black;
+                text-align: center;
+                font-size: 15px;
+            }
+            #p {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 35px;
+                background-color: rgba(255, 255, 0, 0.2);
+                color: black;
+                text-align: center;
+                border-left: 6px solid rgb(48, 48, 48);
+                border-right: 6px solid rgb(48, 48, 48);
+                border-radius: 3px;
+                margin: auto;
+            }
+            #pupu {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 35px;
+                background-color: rgba(255, 255, 0, 0.2);
+                color: black;
+                text-align: center;
+                border-left: 6px solid rgb(48, 48, 48);
+                border-right: 6px solid rgb(48, 48, 48);
+                border-radius: 3px;
+                margin: auto;
+            }
+            #pp {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: black;
+                text-align: center;
+                font-size: 15px;
+            }
+            button {
+                align-items: center;
+                margin: auto;
+            }    
+        </style>
+        <script>
+            function gameStart() {
+                document.getElementById("p").innerHTML = "nie ma bimbru";
+                document.getElementById("pupu").innerHTML = "nie ma bimbru";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>bimber fabryka</h1>
+        <button type = "button" onclick = "gameStart()">kliknij by rozpoczac gre</button>
+        <h2>ostatnia rzecz ten</h2>
+        <p id = "p">gra nierozpoczeta</p>
+        <p id = "pp">stan bimbru:</p>
+        <p id = "pupu">gra nierozpoczeta</p>
+        <br/> <br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "mariusz zrobil bimber"; 
+        document.getElementById("pupu").innerHTML = "jest bimber tak"'>kliknij by mariusz zrobil bimber</button>
+        <br/><br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "mariusz wypil bimber, nie ma juz bimbru"; 
+        document.getElementById("pupu").innerHTML = "mniej bimbru mariusz wypil duzo"'>kliknij by mariusz wypil bimber</button>
+        <br/><br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "mariusz nie zyje juz"; 
+        document.getElementById("pupu").innerHTML = "nie ma mariusza ale nadal masz bimber sa plusy"'>patrz tego tez kliknij zobacz czy sie cos stanie</button>
+        <br/><br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "mariusz przestal produkowac bimber, bankrutujesz"; 
+        document.getElementById("pupu").innerHTML = "juz jest takie ten duze zero"'>a moze tego kliknij</button>
+        <br/><br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "kupiles bimbru troche";
+        document.getElementById("pupu").innerHTML = "duzo bimbru chyba nawet"'>kup bimber sam</button>
+        <br/><br/>
+        <button type = "button" onclick = 'document.getElementById("p").innerHTML = "no pieniazki wziales bimber sprzedales";
+        document.getElementById("pupu").innerHTML = "malo bimbru ale nigdy zero juz"'>sprzedaj bimber sam</button>
+        <br/><br/>
+    </body>
+</html>
